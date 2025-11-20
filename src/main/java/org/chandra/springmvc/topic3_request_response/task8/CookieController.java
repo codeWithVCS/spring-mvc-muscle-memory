@@ -13,7 +13,7 @@ public class CookieController {
     public ResponseEntity<String> setUserCookie(){
         Cookie cookie = new Cookie("user-id", "12345");
         cookie.setPath("/");
-       cookie.setHttpOnly(true);
+        cookie.setHttpOnly(true);
         HttpHeaders headers = new HttpHeaders();
         String cookieValue = cookie.getName() + "=" + cookie.getValue() + "; Path= " + cookie.getPath() + "; HttpOnly=" + cookie.isHttpOnly();
         headers.add(HttpHeaders.SET_COOKIE, cookieValue);
