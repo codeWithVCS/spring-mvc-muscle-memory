@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Substitution Demo</title>
+</head>
+<body>
+
+    <div th:id="${elementId}">
+        This is a dynamic ID div.
+    </div>
+
+    <p th:class="${cssClass}">
+        This paragraph has a dynamic class.
+    </p>
+
+    <span th:attr="title='DynamicTitle', data-info=${cssClass}">
+        Hover to see dynamic attributes.
+    </span>
+
+</body>
+</html>
