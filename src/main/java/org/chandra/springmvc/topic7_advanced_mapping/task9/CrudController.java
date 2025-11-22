@@ -11,7 +11,7 @@ public class CrudController {
         return "Read resource with ID: " + id;
     }
 
-    @PostMapping("/{id}")
+    @PostMapping
     public String createResource(@PathVariable Integer id){
         return "Created resource with ID: " + id;
     }
